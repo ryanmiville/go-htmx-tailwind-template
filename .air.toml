@@ -1,9 +1,10 @@
 root = "."
 tmp_dir = "tmp"
 [build]
-cmd = "make air-cmd"
+cmd = "go build -o ./tmp/main ."
 bin = "./tmp/main"
 delay = 1000                                    # ms
 exclude_dir = ["tmp", "vendor", "node_modules"]
-include_ext = ["go", "tpl", "tmpl", "html"]
+# include_ext = ["go", "tpl", "tmpl", "html"]
+include_ext = ["go"]
 exclude_regex = ["_test\\.go"]
