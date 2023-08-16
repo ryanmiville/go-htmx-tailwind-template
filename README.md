@@ -13,7 +13,7 @@ Simple tech stack template.
 Live reloading for development:
 
 ```bash
-air
+make run
 ```
 
 Build for production:

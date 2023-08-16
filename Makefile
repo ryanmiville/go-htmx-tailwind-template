@@ -1,15 +1,19 @@
 .PHONY: all
-all: ./views/output.css
+all: ./public/app.css
 	go build
 	
 .PHONY: clean
 clean:
-	rm -f ./views/output.css
+	rm -f ./public/app.css
 	rm -f ./go-htmx-tailwind-template
 
-.PHONY: air
-air: views/output.css
+.PHONY: air-cmd
+air-cmd: public/app.css
 	go build -o ./tmp/main .
 	
-views/output.css:
-	npx tailwindcss -i ./views/global.css -o ./views/output.css --minify
+.PHONY: run
+run:
+	air
+
+public/app.css:
+	npx tailwindcss -i ./assets/app.css -o ./public/app.css --minify
