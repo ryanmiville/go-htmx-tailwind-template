@@ -10,13 +10,19 @@ Simple tech stack template.
 
 ## Usage
 
-Live reloading for development:
+### Live reloading for development
+
+```bash
+make css
+```
+
+and in another terminal:
 
 ```bash
 make run
 ```
 
-Build for production:
+### Build for production
 
 ```bash
 make
