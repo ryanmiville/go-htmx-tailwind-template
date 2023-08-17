@@ -10,7 +10,7 @@ clean:
 
 .PHONY: run
 run:
-	air
+	DEV=true air
 
 .PHONY: css
 css:
