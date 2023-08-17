@@ -50,7 +50,9 @@ func createAppDev() *fiber.App {
 	app := fiber.New(fiber.Config{
 		Views: engine,
 	})
-	app.Static("/public", "./public")
+	app.Static("/public", "./public", fiber.Static{
+		CacheDuration: -1,
+	})
 	return app
 }
 

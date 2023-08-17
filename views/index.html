@@ -1,9 +1,9 @@
 {% extends "partials/base.html" %}
 
-{% block pageContent %}
+{% block content %}
 
-  <div class="container text-center mx-auto mt-[calc(10vh)]">
-    <div id="counter" class="text-3xl">{{Count}}</div>
+  <div class="container text-center mx-auto mt-[calc(30vh)]">
+    {% include "partials/counter.html" %}
   </br>
     <button
       hx-target="#counter"
