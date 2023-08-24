@@ -1,6 +1,6 @@
-# Go, htmx, and Tailwind CSS template app
+# Goth Stack
 
-Simple tech stack template.
+**Go**,**T**(ailwind),**H**(tmx) stack template.
 
 ## Pre-requisites
 
